@@ -11,7 +11,16 @@
     return lst
 print(big_money())"""
 
+deposit = int(input("Введите сумму"))
+percent = float(input("Введите процент в формате 0.1"))
+yeahrs=int(input("Введите срок вклада в годах"))
 
-def mu (x):
-    return x*2
-print(list(map(mu,[1,2,3,4])))
+
+def big_money (n,p,m):
+    internal_deposit=n
+    for month in range(m):
+        income = n * p
+        internal_deposit += income
+    return deposit
+print(big_money(deposit, percent, yeahrs))
+
