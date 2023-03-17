@@ -1,10 +1,8 @@
 import random
-
-answer="Yes"
-while answer=="Yes":
+from collections import Counter
+throw_count =[]
+for i in range (1000):
     throw = (random.randint(1, 6))
-    throw2 = (random.randint(1, 6))
-    print(throw, throw2)
-    answer = input("Еще раз?")
-
+    throw_count.append(throw)
+print(Counter(throw_count))
 
