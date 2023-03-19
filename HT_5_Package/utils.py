@@ -18,6 +18,10 @@ def cash_register(banknotes,price):
     banknotes_for_short_change = []
     paid = sum(banknotes)
     short_change = paid - price
+    if paid < price:
+        raise ValueError("Сумма купюр меньше стоимости")
+    elif price == 0:
+        raise ValueError("Цена не может быть равна 0")
     while short_change != 0:
         for i in range(len(set)):
             if short_change - max(set) >= 0:
