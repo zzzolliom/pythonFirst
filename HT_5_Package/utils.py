@@ -15,8 +15,10 @@
 """
 def cash_register(banknotes,price):
     set = {5000, 1000, 500, 100, 50, 10, 5, 2, 1, 0.50, 0.10, 0.05, 0.01}
+    price=round(price,2)
     banknotes_for_short_change = []
     paid = sum(banknotes)
+    paid=round(paid,2)
     short_change = paid - price
     if paid < price:
         raise ValueError("Сумма купюр меньше стоимости")
