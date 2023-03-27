@@ -6,11 +6,14 @@ def random_digit(n,l):
     from random import sample
     if n>=l or n==l:
         my_random_lst=sample([i for i in range(n)],l)
-        print(my_random_lst)
+        return(my_random_lst)
     elif n is not int or l is not int:
         raise ValueError("Все введенные значения должны быть целыми числами")
     else:
         raise ValueError("n не может быть меньше l")
+
+
+
 
 
 
