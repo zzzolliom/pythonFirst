@@ -15,7 +15,7 @@ class DeckOfCards:
     def get(self,index):
         if len(self.deck) > 0:
             print(self.deck[index])
-            #self.deck.pop[index] ---не удаляется
+            #self.deck.pop(self.deck[index])
             return self.deck[index]
         else:
             return "Карты кончились "
@@ -23,7 +23,7 @@ class DeckOfCards:
 
 cards=DeckOfCards()
 cards.shuffle()
-cards.get(5)
+cards.get(15)
 
 
 
